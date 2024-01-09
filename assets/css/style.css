@@ -64,7 +64,8 @@ div{
     width: 30vw;
     padding: 3%;
     background-color: white;
-    
+    border-radius: 50px;
+
 }
 
 .PriceDiv{
