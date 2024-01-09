@@ -18,22 +18,39 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: azure;
 }
 header, nav, footer {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: rgb(255, 94, 0);
+    color: white;
 }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 main {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(219, 216, 216);
 }
 nav select {
     margin-right: 10px;
 }
 nav .category-buttons {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 nav .category-buttons button {
     margin-right: 10px;
@@ -41,4 +58,60 @@ nav .category-buttons button {
 img {
     width: 150px;
     height: 170px;
+    border-radius: 20px;
+}
+
+div{
+    width: 30vw;
+   
+}
+h3{
+    font-size: 0.6em;
+}
+p{
+    font-size: 1.em;
+}
+.PriceDiv{
+    display: flex;
+}
+#addBtn{
+    font-size: 0.6em;
+    font-family: inter-bold;
+    width: 70px;
+    border: none;
+    background-color: rgb(255, 94, 0);
+    color: white;
+}
+
+#electronicsBtn{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: 1px inset white;
+    height: 20px;
+    font-size: 0.6em;
+    width: 100px;
+}
+#jewelryBtn{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: 1px inset white;
+    height: 20px;
+    font-size: 0.6em;
+    width: 100px;
+}
+#mensClothingBtn{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: 1px inset white;
+    height: 20px;
+    font-size: 0.6em;
+    width: 200px;
+}
+#womensClothingBtn{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: 1px inset white;
+    height: 20px;
+    font-size: 0.6em;
+    width: 250px;
 }
