@@ -38,8 +38,6 @@ main {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     background-color: rgb(219, 216, 216);
 }
@@ -61,7 +59,7 @@ img {
 }
 
 div{
-    width: 30vw;
+    width: 200px;
     padding: 3%;
     background-color: white;
     border-radius: 50px;
