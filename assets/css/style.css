@@ -177,10 +177,12 @@ footer{
     #mensClothingBtn{
 
         font-size: 0.4em;
+        width: 330px;
     }
     #womensClothingBtn{
 
         font-size: 0.4em;
+        width: 350px;
     }
     
 }
