@@ -26,4 +26,5 @@ SuperFakeShop is a fictional online shop that showcases a variety of fake produc
    ```bash
    git clone https://github.com/your-username/SuperFakeShop.git
    cd SuperFakeShop
+   **Designed by Farhad Amini***
 
