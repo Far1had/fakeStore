@@ -58,13 +58,21 @@ nav .category-buttons button {
 img {
     width: 150px;
     height: 170px;
-    border-radius: 20px;
 }
 
 div{
     width: 30vw;
-   
+    padding: 3%;
+    background-color: white;
+    
 }
+
+.PriceDiv{
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+
 h3{
     font-size: 0.6em;
 }
