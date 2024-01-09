@@ -14,8 +14,10 @@
     font-size: 18px;   
 }
 header{
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: inter-bold;
 }
 h1{
@@ -69,11 +71,14 @@ img {
 }
 
 div{
-    width: 250px;
+    width: 300px;
     padding: 3%;
     background-color: white;
     border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
 
 }
 
@@ -87,7 +92,7 @@ h3{
     font-size: 0.6em;
 }
 p{
-    font-size: 1.em;
+    font-size: 0.8em;
 }
 .PriceDiv{
     display: flex;
@@ -95,14 +100,12 @@ p{
     font-family: inter-bold;
 }
 
-.PriceDiv: p{
-    col
-}
 
 #addBtn{
-    font-size: 0.6em;
+    font-size: 0.5em;
     font-family: inter-bold;
-    width: 70px;
+    width: 60px;
+    height: 25px;
     border: none;
     background-color: rgb(255, 94, 0);
     color: white;
@@ -116,6 +119,7 @@ p{
     height: 20px;
     font-size: 0.6em;
     width: 100px;
+    border-radius: 9px;
 }
 #jewelryBtn{
     background-color: rgb(255, 94, 0);
@@ -124,6 +128,7 @@ p{
     height: 20px;
     font-size: 0.6em;
     width: 100px;
+    border-radius: 9px;
 }
 #mensClothingBtn{
     background-color: rgb(255, 94, 0);
@@ -132,6 +137,7 @@ p{
     height: 20px;
     font-size: 0.6em;
     width: 200px;
+    border-radius: 9px;
 }
 #womensClothingBtn{
     background-color: rgb(255, 94, 0);
@@ -140,4 +146,12 @@ p{
     height: 20px;
     font-size: 0.6em;
     width: 250px;
+    border-radius: 9px;
+}
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter-bold;
 }
