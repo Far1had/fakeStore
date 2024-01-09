@@ -16,29 +16,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const mensClothingBtn = document.getElementById('mensClothingBtn');
     const womensClothingBtn = document.getElementById('womensClothingBtn');
 
-    let enterKeyPressed = false; // Variable, um zu überprüfen, ob Enter-Taste gedrückt wurde
+    let enterKeyPressed = false; 
 
-    // Funktion zum Sortieren der Produkte nach Preis
+    // Funktion zum Sortieren 
     const sortProducts = (products, sortBy) => {
         if (sortBy === 'lowToHigh') {
             return products.sort((a, b) => a.price - b.price);
         } else if (sortBy === 'highToLow') {
             return products.sort((a, b) => b.price - a.price);
         } else {
-            return products; // Standard: unveränderte Reihenfolge
+            return products; 
         }
     };
 
     // Funktion zum Filtern der Produkte nach Suchbegriff
     const filterProducts = (products, searchTerm) => {
         if (searchTerm.trim() === '' || !enterKeyPressed) {
-            return products; // Wenn die Suche leer ist oder Enter-Taste nicht gedrückt wurde, zeige alle Produkte
+            return products; 
         }
 
         const lowerCaseSearchTerms = searchTerm.toLowerCase().split(' ');
 
         return products.filter(product => {
-            // Überprüfe, ob jedes Suchwort in der Beschreibung oder Kategorie enthalten ist
+            
             return lowerCaseSearchTerms.some(searchTerm =>
                 product.description.toLowerCase().includes(searchTerm) ||
                 product.category.toLowerCase().includes(searchTerm)
@@ -55,33 +55,32 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
         .then(products => {
-            // Produkte nach Standardreihenfolge einfügen
             displayProducts(products);
 
-            // Änderungen im Select-Element überwachen
+
             selectElement.addEventListener('change', () => {
                 const selectedSortOption = selectElement.value;
                 const sortedProducts = sortProducts(products, selectedSortOption);
-                // Produkte neu anzeigen, nachdem sie sortiert wurden
+
                 displayProducts(sortedProducts);
             });
 
             // Änderungen im Suchfeld überwachen
             searchInput.addEventListener('input', () => {
-                enterKeyPressed = false; // Zurücksetzen der Enter-Taste-Variable
+                enterKeyPressed = false;
                 const searchTerm = searchInput.value;
                 const filteredProducts = filterProducts(products, searchTerm);
-                // Produkte neu anzeigen, nachdem sie gefiltert wurden
+
                 displayProducts(filteredProducts);
             });
 
             // Event Listener für Enter-Taste im Suchfeld
             searchInput.addEventListener('keyup', (event) => {
                 if (event.key === 'Enter') {
-                    enterKeyPressed = true; // Setzen der Enter-Taste-Variable
+                    enterKeyPressed = true; 
                     const searchTerm = searchInput.value;
                     const filteredProducts = filterProducts(products, searchTerm);
-                    // Produkte neu anzeigen, nachdem sie gefiltert wurden
+
                     displayProducts(filteredProducts);
                 }
             });
@@ -111,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Funktion zum Anzeigen der Produkte im main-Bereich
     const displayProducts = (products) => {
-        mainElement.innerHTML = ''; // main-Bereich leeren
+        mainElement.innerHTML = '';
 
         // Produkte in den main-Bereich einfügen
         products.forEach(product => {
