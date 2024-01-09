@@ -28,4 +28,4 @@ SuperFakeShop is a fictional online shop that showcases a variety of fake produc
    cd SuperFakeShop
 
 
-**Designet und entwickelt by Farhad und Philip**
+**Designed by Farhad**
