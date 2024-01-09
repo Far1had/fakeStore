@@ -167,7 +167,7 @@ footer{
     #electronicsBtn{
        
         font-size: 0.4em;
-
+        width: 250px;
     }
     #jewelryBtn{
 
@@ -182,7 +182,7 @@ footer{
     #womensClothingBtn{
 
         font-size: 0.4em;
-        width: 350px;
+        width: 380px;
     }
     
 }
