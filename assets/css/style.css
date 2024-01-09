@@ -13,7 +13,14 @@
     box-sizing: border-box;
     font-size: 18px;   
 }
-
+header{
+    display: flex;
+    justify-content: center;
+    font-family: inter-bold;
+}
+h1{
+    font-size: 2em;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,6 +32,8 @@ header, nav, footer {
     padding: 10px;
     background-color: rgb(255, 94, 0);
     color: white;
+    border-radius: 9px;
+
 }
 
 nav {
@@ -37,16 +46,17 @@ main {
     margin: 20px;
     padding: 10px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     background-color: rgb(219, 216, 216);
+    border-radius: 9px;
 }
 nav select {
     margin-right: 10px;
 }
 nav .category-buttons {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 80%;
 }
@@ -59,10 +69,11 @@ img {
 }
 
 div{
-    width: 200px;
+    width: 250px;
     padding: 3%;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 30px;
+    justify-content: center;
 
 }
 
