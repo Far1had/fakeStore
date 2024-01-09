@@ -80,7 +80,14 @@ p{
 }
 .PriceDiv{
     display: flex;
+    color: rgb(63, 123, 3);
+    font-family: inter-bold;
 }
+
+.PriceDiv: p{
+    col
+}
+
 #addBtn{
     font-size: 0.6em;
     font-family: inter-bold;
@@ -88,6 +95,7 @@ p{
     border: none;
     background-color: rgb(255, 94, 0);
     color: white;
+    border-radius: 9px;
 }
 
 #electronicsBtn{
