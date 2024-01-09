@@ -184,8 +184,8 @@ footer{
         font-size: 0.4em;
         width: 380px;
     }
-    h5{
-        font-size: 0.8em;
+    h5, h1{
+        font-size: 0.6em;
     }
     
     
