@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Funktion zum Filtern der Produkte nach Suchbegriff
+    // Funktion zum Filtern nach Suchbegriff
     const filterProducts = (products, searchTerm) => {
         if (searchTerm.trim() === '' || !enterKeyPressed) {
             return products; 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
-    // Funktion zum Filtern der Produkte nach Kategorie
+    // Funktion zum Filtern nach Kategorie
     const filterProductsByCategory = (products, category) => {
         return products.filter(product => product.category.toLowerCase() === category.toLowerCase());
     };
