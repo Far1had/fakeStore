@@ -19,7 +19,12 @@ body {
     margin: 0;
     padding: 0;
 }
-header, nav, main, footer {
+header, nav, footer {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+main {
     margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -32,4 +37,8 @@ nav .category-buttons {
 }
 nav .category-buttons button {
     margin-right: 10px;
+}
+img {
+    width: 150px;
+    height: 170px;
 }

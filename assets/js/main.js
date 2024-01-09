@@ -1,9 +1,3 @@
-//Example Code
-
-fetch('https://fakestoreapi.com/products/1')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-
 
 //Get all products
 
@@ -11,41 +5,26 @@ fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
     .then(json => console.log(json))
 
-//Get a single product
+    // start
 
+document.addEventListener('DOMContentLoaded', function () {
+    const mainElement = document.querySelector('main');
 
-fetch('https://fakestoreapi.com/products/1')
-    .then(res => res.json())
-    .then(json => console.log(json))
-
-
-//Limit results
-
-fetch('https://fakestoreapi.com/products?limit=5')
-    .then(res => res.json())
-    .then(json => console.log(json))
-
-//Sort results
-
-fetch('https://fakestoreapi.com/products?sort=desc')
-    .then(res => res.json())
-    .then(json => console.log(json))
-
-//Get all categories
-
-fetch('https://fakestoreapi.com/products/categories')
-    .then(res => res.json())
-    .then(json => console.log(json))
-
-
-    //Sort results
-
-    fetch('https://fakestoreapi.com/products?sort=desc')
-    .then(res=>res.json())
-    .then(json=>console.log(json))
-
-    
-
-
-
+    fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(products => {
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.innerHTML = `
+                    <h3>${product.title}</h3>
+                    <p>Price: $${product.price}</p>
+                    <p>Category: ${product.category}</p>
+                    <img src="${product.image}" alt="${product.title}">
+                    <!-- Weitere Produktinformationen hier einfügen -->
+                `;
+                mainElement.appendChild(productDiv);
+            });
+        })
+        .catch(error => console.error('Error fetching products:', error));
+});
 
