@@ -157,6 +157,7 @@ p{
 footer{
     height: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: inter-bold;
