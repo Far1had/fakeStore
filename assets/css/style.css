@@ -22,8 +22,13 @@ header{
     font-family: inter-bold;
 }
 h1{
-    font-size: 2em;
+    font-size: 1.8em;
 }
+
+h6{
+    font-size: 0.2em;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
