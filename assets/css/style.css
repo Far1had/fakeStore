@@ -162,3 +162,68 @@ footer{
     align-items: center;
     font-family: inter-bold;
 }
+
+@media only screen and (max-width: 760px) {
+    #electronicsBtn{
+       
+        font-size: 0.4em;
+
+    }
+    #jewelryBtn{
+
+        font-size: 0.4em;
+
+    }
+    #mensClothingBtn{
+
+        font-size: 0.4em;
+    }
+    #womensClothingBtn{
+
+        font-size: 0.4em;
+    }
+    
+}
+
+@media only screen and (min-width: 761px) {
+    #electronicsBtn{
+       
+        font-size: 0.5em;
+
+    }
+    #jewelryBtn{
+
+        font-size: 0.5em;
+
+    }
+    #mensClothingBtn{
+
+        font-size: 0.5em;
+    }
+    #womensClothingBtn{
+
+        font-size: 0.5em;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    #electronicsBtn{
+       
+        font-size: 0.6em;
+
+    }
+    #jewelryBtn{
+
+        font-size: 0.6em;
+
+    }
+    #mensClothingBtn{
+
+        font-size: 0.6em;
+    }
+    #womensClothingBtn{
+
+        font-size: 0.6em;
+    }
+}
