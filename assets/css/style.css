@@ -118,7 +118,7 @@ p{
     border: 1px inset white;
     height: 20px;
     font-size: 0.6em;
-    width: 100px;
+    width: 200px;
     border-radius: 9px;
 }
 #jewelryBtn{
@@ -127,7 +127,7 @@ p{
     border: 1px inset white;
     height: 20px;
     font-size: 0.6em;
-    width: 100px;
+    width: 200px;
     border-radius: 9px;
 }
 #mensClothingBtn{
@@ -136,7 +136,7 @@ p{
     border: 1px inset white;
     height: 20px;
     font-size: 0.6em;
-    width: 200px;
+    width: 300px;
     border-radius: 9px;
 }
 #womensClothingBtn{
@@ -145,7 +145,7 @@ p{
     border: 1px inset white;
     height: 20px;
     font-size: 0.6em;
-    width: 250px;
+    width: 300px;
     border-radius: 9px;
 }
 footer{
